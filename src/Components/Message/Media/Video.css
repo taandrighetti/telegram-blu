@@ -50,6 +50,15 @@
     filter: blur(2px);
 }
 
+.blu img, .blu video {
+    filter: blur(20px);
+}
+
+.blu .sticker-image:hover,
+.blu .user-tile img {
+    filter: initial;
+}
+
 .media-loaded {
     opacity: 0;
 }

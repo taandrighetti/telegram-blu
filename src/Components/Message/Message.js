@@ -35,6 +35,7 @@ import {
     isEmptySelection
 } from '../../Utils/Message';
 import { getMedia } from '../../Utils/Media';
+import { isSenderBlu } from '../../Utils/Blu';
 import { canSendMessages, isChannelChat, isGroupChat, isMeChat, isPrivateChat } from '../../Utils/Chat';
 import {
     openUser,
@@ -502,7 +503,8 @@ class Message extends Component {
                                 <div
                                     className={classNames('message-content', {
                                         'message-bubble': withBubble,
-                                        'message-bubble-out': withBubble && isOutgoing
+                                        'message-bubble-out': withBubble && isOutgoing,
+                                        'blu': isSenderBlu(sender)
                                     })}
                                     style={style}>
                                     {withBubble && ((showTitle && !suppressTitle) || showForward) && (

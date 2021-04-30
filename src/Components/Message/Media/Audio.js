@@ -130,7 +130,7 @@ class Audio extends React.Component {
                             {audioTitle}
                         </a>
                     </div>
-                    <div className='audio-action' style={{ opacity: active ? 0 : 1 }}><span>{audioSubtitle}</span></div>
+                    <div className='audio-action audio-subtitle' style={{ opacity: active ? 0 : 1 }}><span>{audioSubtitle}</span></div>
                     <VoiceNoteSlider audio className='audio-slider' chatId={chatId} messageId={messageId} block={block} duration={duration} style={{ opacity: active ? 1 : 0 }}/>
                     <AudioAction
                         chatId={chatId}

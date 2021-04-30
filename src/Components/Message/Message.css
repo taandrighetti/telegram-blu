@@ -374,6 +374,24 @@ pre code {
     word-break: break-word;
 }
 
+.blu .message-text,
+.blu .poll-question-title,
+.blu .poll-option-text,
+.blu .web-page-title,
+.blu .web-page-description,
+.blu a.document-name,
+.blu .audio-subtitle {
+    color: transparent;
+    text-shadow: 0 0 8px var(--text-primary);
+    user-select: text;
+}
+
+.blu .message-text a,
+.blu .web-page a {
+    color: transparent;
+    text-shadow: 0 0 8px var(--message-in-link);
+}
+
 .message-text-1emoji {
     font-size: 4em;
     line-height: normal;
